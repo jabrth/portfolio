@@ -1,0 +1,40 @@
+
+header {
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+
+ul  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+}
+
+li {
+	display: flex;
+}
+li h2 {
+	display: block;
+	text-align: left;
+}
+
+/* pousser tous les éléments après le premier vers la droite */
+ul li:first-child {
+    margin-right: auto;
+}
+
+li a{
+	justify-content: flex-end;
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+h1, p {
+	text-align: center;
+}
