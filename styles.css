@@ -1,11 +1,17 @@
 
+
 header {
 	border-bottom-style: solid;
 	border-bottom-color: black;
+	padding-bottom: 40px;
+	width: 100vw;
 }
 
-ul  {
+ul {
 	list-style-type: none;
+}
+
+.navbar ul  {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -15,26 +21,55 @@ ul  {
 	width: 100%;
 }
 
-li {
+.navbar li {
 	display: flex;
 }
-li h2 {
+
+.navbar li h2 {
 	display: block;
 	text-align: left;
+
 }
 
 /* pousser tous les éléments après le premier vers la droite */
-ul li:first-child {
+.navbar ul li:first-child {
     margin-right: auto;
 }
 
-li a{
+.navbar li a{
 	justify-content: flex-end;
 	color: black;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
-h1, p {
+h1 {
+	font-size: 3rem;
+}
+header h1, header p {
 	text-align: center;
 }
+
+main {
+	display: grid;
+}
+
+.projects {
+	border-right: 2px solid black;
+}
+
+.projects h2 {
+	margin-top: 0;
+	padding-top: 2%;
+}
+
+.projects ul {
+	padding: 0;
+	margin: 0;
+}
+
+.projects ul li {
+	border-bottom: 2px solid black;
+	padding: 1%;
+}
+
