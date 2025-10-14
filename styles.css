@@ -145,12 +145,16 @@ footer {
 
 @media only screen and (max-width : 580px){
 
-	.navbar {
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbar ul li:first-child{
 		display: block;
+		margin: auto;
 	}
-	.navbar ul li h2{
-		text-align: center;
-	}
+
 	main {
 		background-color: antiquewhite;
 		display: block;
