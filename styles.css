@@ -1,5 +1,6 @@
 
 
+
 header {
 	padding-bottom: 40px;
 	width: 100vw;
@@ -32,7 +33,7 @@ ul {
 
 /* pousser tous les éléments après le premier vers la droite */
 .navbar ul li:first-child {
-    margin-right: auto;
+	margin-right: auto;
 }
 
 .navbar li a{
@@ -72,7 +73,8 @@ main {
 
 .projects ul li {
 	border-bottom: 2px solid black;
-	padding: 5%;
+	padding: 3%;
+	padding-left: 5%;
 }
 
 .projects ul li:last-child{
@@ -107,4 +109,62 @@ main {
 	padding-left: 2%;
 }
 
+article {
+	
+	min-height: 350px;
+}
 
+article h3 {
+	margin-left: 5%;
+}
+
+article ul {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 0%;
+	margin: 20px;
+}
+
+article ul li {
+	border: 1px solid black;
+	border-radius: 20%;
+	padding: 1%;
+	max-width: 220px;
+	margin: 20px;
+	
+}
+
+article ul li p {
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+}
+
+@media only screen and (max-width : 580px){
+
+	.navbar {
+		display: block;
+	}
+	.navbar ul li h2{
+		text-align: center;
+	}
+	main {
+		background-color: antiquewhite;
+		display: block;
+	}
+
+	article ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	article ul li {
+		padding-top: 20px;
+		min-width: 400px;
+		border-radius: 30px;
+	}
+}
