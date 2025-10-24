@@ -1,46 +1,35 @@
+/* règles générales s'appliquant a tout le fichier */
 
-
-
-header {
-	padding-bottom: 40px;
-	width: 100vw;
+@font-face {
+	font-family: 'handwrite';
+	font-style: normal;
+	font-weight: 400;
+	src: local(fonts/mistake_note.otf);
 }
 
 ul {
 	list-style-type: none;
 }
 
-.navbar ul  {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	width: 95%;
-}
-
-.navbar li {
-	display: flex;
-}
-
-.navbar li h2 {
-	display: block;
-	text-align: left;
-	padding-left: 10%;
-	min-width: 180px;
-}
-
-/* pousser tous les éléments après le premier vers la droite */
-.navbar ul li:first-child {
-	margin-right: auto;
-}
-
-.navbar li a{
-	justify-content: flex-end;
+a {
 	color: black;
-	margin: 8px;
 	text-decoration: none;
+}
+
+/* fin règles générales */
+
+header {
+	padding-bottom: 40px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navbar h2{
+	margin-right: auto;
 }
 
 h1 {
@@ -55,7 +44,7 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(1, 1fr);
 	border: 2px, solid, black;
-	width: 100%
+	
 }
 
 .projects {
@@ -145,14 +134,9 @@ footer {
 
 @media only screen and (max-width : 580px){
 
-	.navbar ul {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.navbar ul li:first-child{
+	.navbar{
 		display: block;
-		margin: auto;
+		text-align: center;
 	}
 
 	main {
@@ -164,11 +148,12 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin: auto;
 	}
 	
 	article ul li {
 		padding-top: 20px;
-		min-width: 400px;
+		min-width: 200px;
 		border-radius: 30px;
 	}
 }
