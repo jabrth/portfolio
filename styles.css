@@ -1,35 +1,37 @@
-/* règles générales s'appliquant a tout le fichier */
 
-@font-face {
-	font-family: 'handwrite';
-	font-style: normal;
-	font-weight: 400;
-	src: local(fonts/mistake_note.otf);
+html{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h3, h4{
+	font-family: cursive;
+	font-weight: lighter;
 }
 
 ul {
 	list-style-type: none;
 }
 
-a {
+header {
+	padding-bottom: 40px;
+}
+
+header a {
 	color: black;
 	text-decoration: none;
 }
 
-/* fin règles générales */
-
-header {
-	padding-bottom: 40px;
-}
 
 .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	margin-right: 2%;
 }
 
 .navbar h2{
 	margin-right: auto;
+	margin-left: 2%;
 }
 
 h1 {
@@ -37,6 +39,14 @@ h1 {
 }
 header h1, header p {
 	text-align: center;
+}
+
+.navbar a{
+	padding-left: 0;
+}
+
+span{
+	margin: 1%;
 }
 
 main {
@@ -75,10 +85,14 @@ main {
 	padding-bottom: 5%;
 }
 
+.work a{
+	text-decoration-line: none;
+}
+
 .work h3, h4, p, a{
 	padding-left: 5%
 }
-.work h4, p {
+.work h4, .work p {
 	margin: 3px;
 }
 
@@ -94,15 +108,21 @@ main {
 	padding-left: 5%;
 }
 
+.educ p{
+
+}
+
 .educ ul{
 	padding-left: 2%;
 }
 
 article {
-	
 	min-height: 350px;
 }
 
+.fade{
+	color: rgb(196, 195, 195);
+}
 article h3 {
 	margin-left: 5%;
 }
