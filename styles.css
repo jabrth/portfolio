@@ -108,10 +108,6 @@ main {
 	padding-left: 5%;
 }
 
-.educ p{
-
-}
-
 .educ ul{
 	padding-left: 2%;
 }
@@ -152,6 +148,30 @@ footer {
 	text-align: center;
 }
 
+form{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+form .name{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+form .email{
+	grid-column: 2/2;
+	grid-row: 1/2;
+}
+
+form .message{
+	grid-area: span 2;
+}
+
+form .btn{
+	grid-row: 3/3;
+	grid-area: span 2;
+}
 @media only screen and (max-width : 580px){
 
 	.navbar{
