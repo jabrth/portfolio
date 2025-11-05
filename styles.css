@@ -37,6 +37,11 @@ header a {
 h1 {
 	font-size: 3rem;
 }
+
+header p{
+	padding-left: 0;
+}
+
 header h1, header p {
 	text-align: center;
 }
@@ -148,7 +153,9 @@ footer {
 	text-align: center;
 }
 
-form{
+.form{
+	margin: auto;
+	max-width: 50%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
@@ -165,12 +172,15 @@ form .email{
 }
 
 form .message{
-	grid-area: span 2;
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	max-height: 170px;
 }
 
 form .btn{
-	grid-row: 3/3;
-	grid-area: span 2;
+	grid-row-start: 3;
+	grid-column-start: 2;
 }
 @media only screen and (max-width : 580px){
 
@@ -195,5 +205,9 @@ form .btn{
 		padding-top: 20px;
 		min-width: 200px;
 		border-radius: 30px;
+	}
+
+	.form{
+		margin-left: 0;
 	}
 }
